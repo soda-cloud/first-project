@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ediya</title>
+        <link href="/css/index.css" rel="stylesheet"/>
+        <script src="script/index.js" defer></script>
+    </head>
+    <body>
+        <!-- header영역 -->
+        <header class="header">
+            <h1 class="headerHeading resetmargin">
+                <a
+                    aria-label="이디아 메인 홈페이지 이동링크 이미지"
+                    href="https://www.ediya.com/"
+                    title="이디아 커피 홈페이지로 이동"
+                    target="_blank"
+                >
+                    <img src="/css/image/Logo.svg" alt="이디아 커피 로고" />
+                </a>
+            </h1>
+        </header><!--버튼까지가 헤더부분에 속하는지-->
+        <nav class="navigation">
+            <h2 class="a11yHidden" id="navigationHeading">
+            </h2>
+            <!--navigation Btn 승일님은 버튼에 resetbutton이 들어감-->
+            <button class="openNavigationBtn resetBtn"
+                type="button"
+                aria-label="메뉴 열기 버튼"
+                title="메뉴 열기">
+                <!--Btn burgerbar-->
+                <span class="burgerbar1" aria-hidden="true"></span>
+                <span class="burgerbar2" aria-hidden="ture"></span>
+                <span class="burgerbar3" aria-hidden="ture"></span>
+            </button>
+            <!--navigation box-->
+            <section class="navigationBox" aria-labelledby="navigationHeading">
+                <h3 class="a11yHidden">네비게이션 리스트</h3>
+                <button class="closeBtn"
+                    type="button"
+                    aria-lable="메뉴 닫기 버튼"
+                    title="메뉴 닫기">
+                    <!--close Btn-->
+                    <span class="burgerbarCross1"></span>
+                    <span class="burgerbarCross2"></span>
+                </button>
+                    <!--navigation list 승일님 같은 경우 list가 버튼 위로 올라가 있음-->
+                <ul class="navigationList resetmargin">
+                    <li><a class="navigationItems">메뉴</a></li>
+                    <li><a class="navigationItems">이디아멤버스</a></li>
+                    <li><a class="navigationItems">이디아커피랩</a></li>
+                    <li><a class="navigationItems">이디아컬쳐랩</a></li>
+                    <li><a class="navigationItems">공지사항</a></li>
+                    <li><a class="navigationItems">매장찾기</a></li>
+                </ul>
+            </section>
+        </nav>
+        <!--승일님은 header가 여기서 닫혔다-->
+        <!--main start-->
+        <main class="main">
+            <h2 class="a11yHidden">이다아 메뉴</h2>
+            <!--beverage group-->
+                <ul class="menuLists">
+                    <li class="menuList"><!--beverage1 tabindex가 들어가있음 -->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/ICED벚꽃라떼.svg" alt="ICED벚꽃라떼">
+                            <!--이미지 주소 다 바꿔야하네?-->
+                            <figcaption>ICED 벚꽃라떼</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <h3 class="a11yHidden">메뉴 상세정보</h3><!--나는 h3 쓸 생각을 못했음-->
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle"> ICED 벚꽃라떼 <span>cherry Blossom Latte</span></dt>
+                                <dd class="menuDescription resetMargin">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                                <dt class="a11yHidden">ICED벚꽃라떼 영양성분</dt><!--메뉴성분이 아니라 영양성분 아닌가?-->
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(393kcal)</td>
+                                            <td>포화지방</td>
+                                            <!--나는 여기 scope="row" 빼먹음-->
+                                            <td>(18.6g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(35g)</td>
+                                            <td>나트륨</td>
+                                            <td>(149mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(7g)</td>
+                                            <td>카페인</td>
+                                            <td>(0mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <!--여기세서 resetBtn closeBtn 전부 사용함 이거 따로 생각해 볼 것-->
+                            <button class="exampleBtn" 
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage2-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/HOT벚꽃라떼.svg" alt="HOT벚꽃라떼">
+                            <figcaption>HOT 벚꽃라떼</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">HOT 벚꽃라떼 <span>cherry Blossom Latte</span></dt>
+                                <dd class="menuDescription resetMargin">은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</dd>
+                                <dt class="a11yHidden">HOT벚꽃라떼 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(430kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(19.0g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(38g)</td>
+                                            <td>나트륨</td>
+                                            <td>(190mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(10g)</td>
+                                            <td>카페인</td>
+                                            <td>(0mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage3-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/ICED브라우니 쇼콜라.svg" alt="ICED브라우니쇼콜라">
+                            <figcaption>ICED브라우니쇼콜라</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">ICED브라우니쇼콜라<span>Brownie Chocolate</span></dt>
+                                <dd class="menuDescription resetMargin">깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료</dd>
+                                <dt class="a11yHidden">ICED브라우니쇼콜라 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(503kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(20.8g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(42g)</td>
+                                            <td>나트륨</td>
+                                            <td>(262mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(9g)</td>
+                                            <td>카페인</td>
+                                            <td>(12mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage4-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/HOT브라우니 쇼콜라.svg" alt="HOT 브라우니 쇼콜라">
+                            <figcaption>HOT 브라우니 쇼콜라</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">HOT 브라우니 쇼콜라<span>Brownie Chocolate</span></dt>
+                                <dd class="menuDescription resetMargin">깊고 진한 초콜릿의 맛에 부드러운 휘핑크림과 브라우니를 함께 어울러져 고급스러운 디저트 같은 초콜릿 음료</dd>
+                                <dt class="a11yHidden">HOT 브라우니 쇼콜라 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(503kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(20.9g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(42g)</td>
+                                            <td>나트륨</td>
+                                            <td>(299mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(9g)</td>
+                                            <td>카페인</td>
+                                            <td>(12mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage5-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/제주청귤 오리지널.svg" alt="제주청귤 오리지널">
+                            <figcaption>제주청귤 오리지널</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">제주청귤 오리지널<span>Jeju Green Tangerine Tea</span></dt>
+                                <dd class="menuDescription resetMargin">청정 제주지역에서 자라난 귀한 청귤의 풍부한 과육을 맛볼 수 있는 새콤달콤한 홈메이드 스타일 과일차</dd>
+                                <dt class="a11yHidden">제주청귤 오리지널 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(218kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(0.1g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(51g)</td>
+                                            <td>나트륨</td>
+                                            <td>(4mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(0g)</td>
+                                            <td>카페인</td>
+                                            <td>(0mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage6-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/제주청귤 블라썸.svg" alt="제주청귤 블라썸">
+                            <figcaption>제주청귤 블라썸</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">제주청귤 블라썸<span>Jeju Green Tangerine Blossom</span></dt>
+                                <dd class="menuDescription resetMargin">청귤의 새콤함이 복숭아, 포도 등의 다양한 과일향과 함께 어우러져 밸런스가 훌륭한 블렌딩티</dd>
+                                <dt class="a11yHidden">제주청귤 블라썸 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(202kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(0.1g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(46g)</td>
+                                            <td>나트륨</td>
+                                            <td>(5mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(1g)</td>
+                                            <td>카페인</td>
+                                            <td>(0mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage7-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/석류 오지지널.svg" alt="석류 오리지널">
+                            <figcaption>석류 오리지널</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">석류 오리지널<span>Pomegranate Tea</span></dt>
+                                <dd class="menuDescription resetMargin">석류 특유의 산뜻한 향과 깔끔한 뒷맛이 느껴지며, 과육이 한알 한알 살아있는 붉은 빛의 매력적인 과일차</dd>
+                                <dt class="a11yHidden">석류 오리지널 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(210kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(0.1g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(42g)</td>
+                                            <td>나트륨</td>
+                                            <td>(5mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(0g)</td>
+                                            <td>카페인</td>
+                                            <td>(0mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                    <li class="menuList"><!--beverage8-->
+                        <figure class="resetmargin"><!--beverage img-->
+                            <img class="menuImg" src="/css/image/석류 애플라임.svg" alt="석류 애플라임">
+                            <figcaption>석류 애플라임</figcaption>
+                        </figure>
+                        <section class="menuExplain">
+                            <dl class="resetMargin"><!--beverage Explanation-->
+                                <dt class="menuTitle">석류 애플라임<span>Pomegranate Apple Limea</span></dt>
+                                <dd class="menuDescription resetMargin">산뜻한 석류에 다양한 과일과 꽃, 그리고 샴페인의 향이 더해져 보다 깊고 중후한 맛이 느껴지는 블렌딩티</dd>
+                                <dt class="a11yHidden">석류 애플라임 영양성분</dt>  
+                                <dd>
+                                    <table class="menuIngredientTable"><!--table start-->
+                                        <tr>
+                                            <th scope="row">칼로리</th>
+                                            <td>(220kcal)</td>
+                                            <td>포화지방</td>
+                                            <td>(0.1g)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">당류</th>
+                                            <td>(42g)</td>
+                                            <td>나트륨</td>
+                                            <td>(7mg)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">단백질</th>
+                                            <td>(1g)</td>
+                                            <td>카페인</td>
+                                            <td>(0mg)</td>
+                                        </tr>
+                                    </table>
+                                </dd>
+                            </dl>
+                            <button class="exampleBtn"
+                                type="button"
+                                aria-lable="메뉴 닫기 버튼"
+                                title="메뉴 닫기">
+                                <!--close Btn-->
+                                <span class="burgerbarCross1"></span>
+                                <span class="burgerbarCross2"></span>
+                            </button>
+                        </section>
+                    </li>
+                </ul>
+        </main>
