@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--문서를 인코딩하는 방식이니까 맨 위에 선언해준다.SEO-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="author" content="최예린">
+    <meta name="description" content="이디아 홈페이지 홀로 실습해보기">
+    <meta name="keywords" content="이디아,이디아커피,이디아메뉴,이디아창업,프랜차이즈,커피창업,창업,카페">
+    
+    <!--타 조의 경우 일부러 영어로 처리한 경우도 있었음 원어로 읽어주니까-->
+    <title>이디아홈페이지</title>
+
+    <!--문서를 다른 곳에 불러 올 때 명시해주는 정보.SEO-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이디아">
+    <meta property="og:description" content="이디아 홈페이지 홀로 실습해보기">
+    <!--여기 http 주소로 들어가는 것 같은데 잘 모르겠음-->
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="https://www.ediya.com">
+    
+    <link rel="stylesheet" href="/css/tt.css">
+    <!--자신의 정식 주소를 지정해줄 때 쓰임, 여러 중복 주소가 있으면 SEO점수가 내려가기 때문에 -->
+    <link rel="canonical" href="https://www.ediya.com">
+    
+    <!--스크립트 관련. defer는 문서 파싱 방법-->
+    <script src="/script/tt.js" defer></script>
+</head>
+
+<body>
+    <!--헤더-->
+    <header>
+        <!--제목과 내용을 따로 분리하는게 의미가 있나?-->
+        <h1>이디아 홈페이지</h1>
+        <a href="https://www.ediya.com"><img src="/css/image/Logo.svg" alt="이디아 홈페이지 바로가기 로고"></a>
+    </header> 
+
+    <!--네비게이션 시작-->
+    <nav>
+        <h2>이디아 서비스 메뉴</h2>
+        <button>서비스 메뉴 열림</button>
+        <ul>
+            <!--h2 넣어주고 싶었는데 ul 안에는 못 들어간다-->
+            <li><a href="">메뉴</a></li>
+            <li><a href="">이디야 멤버스</a></li>
+            <li><a href="">이디야 커피랩</a></li>
+            <li><a href="">이디야 컬쳐랩</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">매장찾기</a></li>
+        </ul>
+        <button>서비스 메뉴 닫힘
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!--메인시작-->
+    <main> 
+        <h2>이디아 음료 메뉴</h2>
+        <ul>
+            <li>
+                <!--원본 카드-->
+                <a href="">
+                    <figure>
+                        <img src="/css/image/ICED벚꽃라떼.svg">
+                        <figcaption>ICED벚꽃라떼</figcaption>
+                    </figure>
+                </a>
+
+                <!--새로 올라올 카드-->
+                <dialog>
+                    <!--h3를 넣고 싶었는데 중첩을 막고 싶으니까 후보로 dfn있었으나 위에 figure을 넣는게 더 이득일 것 같았음-->
+                    <h3>IECD 벚꽃라떼
+                        <span>Cherry Blossom Latte</span>
+                    </h3>
+                    <p>은은한 벚꽃향과 라즈베리 화이트 초콜릿 토핑이 올라간 핑크빛 라떼</p>
+                    
+                    <!--영양정보 시작-->
+                    <!--나는 div로 묶고 싶었던 것이 배치를 위한 것이지 의미가 없으니까...?-->
+                    <div>
+                    <dl>
+                        <dt>칼로리</dt><dd>(393kcal)</dd>
+                    </dl>
+                    <dl>
+                        <dt>당류</dt><dd>(35g)</dd>
+                    </dl>
+                    <dl>
+                        <dt>단백질</dt><dd>(7g)</dd>
+                    </dl>
+                    <dl>
+                        <dt>포화지방</dt><dd>(18.6g)</dd>
+                    </dl>
+                    <dl>
+                        <dt>나트륨</dt><dd>(149mg)</dd>
+                    </dl>
+                    <dl>
+                        <dt>카페인</dt><dd>(0g)</dd>
+                    </dl>
+                </div>
+                <!--닫기 버튼-->
+                <!--근데 이런 식으로 직접 집어넣으면 텍스트만 안보이게 처리가 가능한가...?-->
+                <button>닫기버튼
+                    <span></span>
+                    <span></span>
+                </button>
+                </dialog>
+            </li>
+        </ul>
+    </main>
+
+
+</body>
+</html>
